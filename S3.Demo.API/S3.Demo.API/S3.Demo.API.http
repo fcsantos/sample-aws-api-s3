@@ -1,0 +1,18 @@
+@S3.Demo.API_HostAddress = http://localhost:5069
+
+GET {{S3.Demo.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{S3.Demo.API_HostAddress}}/api/buckets
+Accept: application/json
+
+###
+
+POST {{S3.Demo.API_HostAddress}}/api/buckets?bucketName=test-bucket-from-api
+Accept: application/json
+
+###
+
+DELETE {{S3.Demo.API_HostAddress}}/api/buckets?bucketName=test-dotnet-bucket
